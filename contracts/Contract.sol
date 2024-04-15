@@ -54,6 +54,7 @@ contract DEX is ERC20Base {
         payable(msg.sender).transfer(_ethAmount);
         ERC20Base(token).transfer(msg.sender ,_tokenAmount);
         return (_ethAmount, _tokenAmount);
+        
     }
 
     function getAmountOfTokens(
