@@ -11,11 +11,11 @@ const activeChain = "sepolia";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider
-      clientId="pk_test_XXXXXXXXXXXXXXXXXXXXXXXX"
+      clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
       activeChain={activeChain}
     >
-
-      // I have exposed a test api key here for testing
+        // I have exposed a test api key here for testing
+        // Now I have removed the key
       <Navbar/>
       <Component {...pageProps} />
     </ThirdwebProvider>
