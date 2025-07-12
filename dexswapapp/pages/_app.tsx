@@ -11,7 +11,7 @@ const activeChain = "sepolia";
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThirdwebProvider
-      clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
+      clientId="AIzaSyCLOQxeQ81swSVZRCK3KJTICYXandPG900"
       activeChain={activeChain}
     >
         // I have exposed a test api key here for testing
